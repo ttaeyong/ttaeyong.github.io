@@ -643,4 +643,9 @@ flowchart TD
 
 앞으로도 하드웨어와 소프트웨어 사이의 제약을 이해하고, 이를 제어·연동·검증 가능한 소프트웨어 구조로 구현하는 엔지니어로 성장하고자 합니다.
 
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> <script> window.onload = function() { mermaid.initialize({ startOnLoad: true }); mermaid.init(undefined, document.querySelectorAll('.language-mermaid')); }; </script>
+<style>
+  .anchor, .anchorjs-link, .octicon-link {
+      display: none !important;
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> <script> window.onload = function() {mermaid.initialize({ startOnLoad: true }); mermaid.init(undefined, document.querySelectorAll('.language-mermaid')); }; </script>
