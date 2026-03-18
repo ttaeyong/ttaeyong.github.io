@@ -603,3 +603,11 @@ void  do_garbage_collection() {
     
 
 저는 하드웨어와 소프트웨어의 경계에서 발생하는 병목과 제약을 이해하고, 이를 저수준 소프트웨어 수준에서 해석하고 해결하는 엔지니어로 성장하고 있습니다.
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  window.onload = function() {
+    mermaid.initialize({ startOnLoad: true });
+    mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  };
+</script>
