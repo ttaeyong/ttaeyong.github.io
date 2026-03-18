@@ -182,7 +182,8 @@ void  ValuePostingTask(void  *pdata)
  }  
 }
 
-</div></details> ```
+</div> </details>
+```
 
 ----------
 
@@ -328,7 +329,8 @@ void  send(uint8  X){
  }  
 }
 
-</div></details> ```
+</div></details>
+```
 
 ----------
 
@@ -469,7 +471,8 @@ void  do_garbage_collection() {
   ssdEraseBlock(victim_blk);  
 }
 
-</div></details> ```
+</div></details>
+```
 
 ----------
 
