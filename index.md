@@ -76,7 +76,7 @@ title: 김태용 | System Programmer Portfolio
 
 ### Skills / Keywords
 
-`C++`  `Intel VTune Profiler`  `AVX-512`  `Loop Reordering`  `Blocking`  `Loop Unrolling`  `Cache Locality`  `Register Pressure`
+`C++`  `Intel VTune Profiler`  `AVX-512`  `Loop Reordering`  `Blocking`  `Loop Unrolling`  `Cache Locality`  `Register Spilling`
 
 ### Optimization Pipeline
 
