@@ -93,7 +93,7 @@ title: 김태용 | System Programmer Portfolio
 
 ### Performance Comparison
 
-![행렬곱 최적화 단계별 성능 비교](/assets/img/gemm_speedup.png)
+![행렬곱 최적화 단계별 성능 비교](/assets/image/gemm_speedup.png)
 
 *Naive 구현 대비 성능 향상 배수입니다. 단일 기법만으로는 개선 폭이 제한적이었고,  
 캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 얻었습니다.*
