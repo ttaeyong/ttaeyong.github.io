@@ -182,8 +182,8 @@ void  ValuePostingTask(void  *pdata)
  }  
 }
 
-</div> </details>
 ```
+</div> </details>
 
 ----------
 
@@ -329,9 +329,8 @@ void  send(uint8  X){
  }  
 }
 
-</div></details>
 ```
-
+</div></details>
 ----------
 
 ## 4. NAND Flash Translation Layer (FTL) Emulator
@@ -471,9 +470,8 @@ void  do_garbage_collection() {
   ssdEraseBlock(victim_blk);  
 }
 
-</div></details>
 ```
-
+</div></details>
 ----------
 
 ## What I Learned Across Projects
