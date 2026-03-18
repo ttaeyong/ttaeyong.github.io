@@ -8,8 +8,8 @@ title: 김태용 | Embedded & System SW Portfolio
 **Embedded & System Software Engineer**  
 [Email](mailto:ktyong1225@inha.edu)  |  [GitHub](https://github.com/ttaeyong)
 
-C/C++ 기반의 임베디드·시스템 소프트웨어를 설계하고 구현해왔습니다.  
-주기 태스크, 인터럽트, IPC, 상태기계, 하드웨어 제약을 고려해 실시간 제어 흐름을 구조화해왔습니다. 구현뿐 아니라 검증 가능성까지 고려한 시스템 설계를 지향합니다.
+C/C++ 기반의 임베디드·시스템 소프트웨어 프로젝트를 수행하며, 실시간 제어와 시스템 내부 동작에 관심을 가져왔습니다.  
+주기 태스크, 인터럽트, IPC, 상태기계 등을 직접 구현하면서 하드웨어 제약을 고려한 소프트웨어 구조를 경험했습니다.
 
 ---
 
