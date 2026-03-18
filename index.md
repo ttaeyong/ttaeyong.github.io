@@ -78,9 +78,6 @@ title: 김태용 | System Programmer Portfolio
 
 `C++`  `Intel VTune Profiler`  `AVX-512`  `Loop Reordering`  `Blocking`  `Loop Unrolling`  `Cache Locality`  `Register Pressure`
 
-[VTune 병목 분석 보고서 확인 (PDF)](https://chatgpt.com/assets/pdf/Profiling_VTune_Examples.pdf)  
-[SIMD 및 복합 최적화 보고서 확인 (PDF)](https://chatgpt.com/assets/pdf/Profiling_Matrix_Multiplication.pdf)
-
 ### Optimization Pipeline
 
 | Version | 핵심 아이디어 | 의미 |
@@ -97,6 +94,9 @@ title: 김태용 | System Programmer Portfolio
 
 *Naive 구현 대비 성능 향상 배수입니다. 단일 기법만으로는 개선 폭이 제한적이었고,  
 캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 얻었습니다.*
+
+[VTune 병목 분석 보고서 확인 (PDF)](https://chatgpt.com/assets/pdf/Profiling_VTune_Examples.pdf)  
+[SIMD 및 복합 최적화 보고서 확인 (PDF)](https://chatgpt.com/assets/pdf/Profiling_Matrix_Multiplication.pdf)
 
 ----------
 
