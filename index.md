@@ -81,6 +81,23 @@ title: 김태용 | System Programmer Portfolio
 [VTune 병목 분석 보고서 확인 (PDF)](https://chatgpt.com/assets/pdf/Profiling_VTune_Examples.pdf)  
 [SIMD 및 복합 최적화 보고서 확인 (PDF)](https://chatgpt.com/assets/pdf/Profiling_Matrix_Multiplication.pdf)
 
+### Optimization Pipeline
+
+| Version | 핵심 아이디어 | 의미 |
+|---|---|---|
+| Naive | 기본 구현 | baseline |
+| Loop Reordering | `i-j-k → i-k-j` | 공간 지역성 개선 |
+| Blocking | cache 크기 고려 | 메모리 병목 완화 |
+| SIMD | AVX-512 적용 | 벡터 연산 병렬화 |
+| Combined | 기법 결합 | 최종 15.2배 향상 |
+
+### Performance Comparison
+
+![행렬곱 최적화 단계별 성능 비교](/assets/img/gemm_speedup.png)
+
+*Naive 구현 대비 성능 향상 배수입니다. 단일 기법만으로는 개선 폭이 제한적이었고,  
+캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 얻었습니다.*
+
 ----------
 
 ## 2. RTOS 기반 센서 모니터링 및 경보 시스템
