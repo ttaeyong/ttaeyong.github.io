@@ -181,8 +181,8 @@ void  ValuePostingTask(void  *pdata)
   OSQPost(DisplayQ, &digits[1]);  
  }  
 }
-'''
-</details>
+
+</div></details> '''
 
 ----------
 
@@ -328,8 +328,8 @@ void  send(uint8  X){
  }  
 }
 
-</details>
-'''
+</div></details> '''
+
 ----------
 
 ## 4. NAND Flash Translation Layer (FTL) Emulator
@@ -468,9 +468,8 @@ void  do_garbage_collection() {
  }  
   ssdEraseBlock(victim_blk);  
 }
-'''
 
-</details>
+</div></details> '''
 
 ----------
 
