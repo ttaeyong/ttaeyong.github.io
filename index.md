@@ -331,6 +331,7 @@ void  send(uint8  X){
 
 ```
 </div></details>
+
 ----------
 
 ## 4. NAND Flash Translation Layer (FTL) Emulator
@@ -472,6 +473,7 @@ void  do_garbage_collection() {
 
 ```
 </div></details>
+
 ----------
 
 ## What I Learned Across Projects
