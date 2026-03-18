@@ -369,7 +369,7 @@ flowchart LR
 
 ### 핵심 코드 예시
 
-```C
+```c
 void TemperatureTask(void *data)
 {
     data = data;
