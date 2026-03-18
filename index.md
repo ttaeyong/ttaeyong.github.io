@@ -1,5 +1,7 @@
-## layout: default  
+---
+layout: default
 title: 김태용 | System Programmer Portfolio
+---
 
 # 김태용 (Tae Yong Kim)
 
