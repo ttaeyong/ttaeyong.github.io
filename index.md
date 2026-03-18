@@ -158,7 +158,7 @@ flowchart LR
 
 ### 핵심 코드 예시
 
-```C
+```c
 static boolean is_SW1_pushed(void)
 {
     return sw1_isr_count != sw1_main_count;
