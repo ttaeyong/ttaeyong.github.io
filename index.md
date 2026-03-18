@@ -359,7 +359,7 @@ flowchart LR
 
 <details> <summary><b>구현 개요 및 핵심 코드 보기</b></summary> <div markdown="1">
 
-### **구현 개요**
+### 구현 개요
 
 1. uC/OS-II 기반으로 온도 수집, 값 해석, 디스플레이, 조도 판단, LED 제어 태스크를 분리
 2. 온도 데이터는 Mailbox로 최신값 전달
@@ -367,7 +367,7 @@ flowchart LR
 4. 조도 값에 따라 임계 온도를 조정
 5. 임계 상태를 별도 상태값으로 관리하고 LED 출력에 반영
 
-### **핵심 코드 예시**
+### 핵심 코드 예시
 
 ```C
 void TemperatureTask(void *data)
