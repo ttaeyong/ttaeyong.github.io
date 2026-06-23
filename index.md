@@ -35,21 +35,23 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 
 ### System Architecture
 
-<div align="center">
-  <img src="./assets/image/car_profile_hw_architecture.png" width="90%" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 구성도">
+<div align="center" style="display: flex; gap: 16px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+
+  <div style="width: 48%; min-width: 280px;">
+    <img src="./assets/image/car_profile_hw_architecture.png" width="100%" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
+    <p align="center">
+      <em>AURIX TC275/TC375, CAN-FD, 센서·액추에이터를 연동한 다중 ECU 기반 차량 설정 개인화 시스템 구성입니다.</em>
+    </p>
+  </div>
+
+  <div style="width: 48%; min-width: 280px;">
+    <img src="./assets/image/car_profile_state_flow.png" width="100%" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
+    <p align="center">
+      <em>ECU별 기능 분담, 최상위 상태 전이, 주기 태스크 기반 제어, DFlash 프로필 저장·복원 흐름을 정리한 구조입니다.</em>
+    </p>
+  </div>
+
 </div>
-
-<p align="center">
-  <em>Raspberry Pi 4, AURIX TC275/TC375, CAN-FD, 센서·액추에이터를 연동한 다중 ECU 기반 차량 설정 개인화 시스템 구성입니다.</em>
-</p>
-
-<div align="center">
-  <img src="./assets/image/car_profile_state_flow.png" width="90%" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
-</div>
-
-<p align="center">
-  <em>ECU별 기능 분담, 주기 태스크 기반 제어, DFlash 프로필 저장·복원 흐름을 정리한 구조입니다.</em>
-</p>
 
 ### My Role
 
