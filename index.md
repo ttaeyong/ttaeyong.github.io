@@ -40,14 +40,14 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
   <div style="width: 48%; min-width: 280px;">
     <img src="./assets/image/car_profile_hw_architecture.png" width="100%" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
     <p align="center">
-      <em>AURIX TC275/TC375, CAN-FD, 센서·액추에이터를 연동한 다중 ECU 기반 차량 설정 개인화 시스템 구성입니다.</em>
+      <em>AURIX TC275/TC375, CAN-FD, 센서·액추에이터를 연동한 다중 ECU 기반 차량 설정 개인화 시스템 구성</em>
     </p>
   </div>
 
   <div style="width: 48%; min-width: 280px;">
     <img src="./assets/image/car_profile_state_flow.png" width="100%" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
     <p align="center">
-      <em>ECU별 기능 분담, 최상위 상태 전이, 주기 태스크 기반 제어, DFlash 프로필 저장·복원 흐름을 정리한 구조입니다.</em>
+      <em>ECU별 기능 분담, 최상위 상태 전이, 주기 태스크 기반 제어, DFlash 프로필 저장·복원 흐름을 정리한 구조</em>
     </p>
   </div>
 
@@ -58,7 +58,7 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 - AURIX TC275 기반 프로젝트에서 주기 태스크와 이벤트 처리 흐름 구성
 - Access & Body ECU 기능 구현
 - DFlash 기반 사용자 프로필 저장·복원 기능 구현
-- UDS 기반 업데이트 흐름 통합 참여
+- UDS 기반 업데이트 흐름 통합
 - 담당 ECU reprogramming 기능 구현
 - inactive PFlash write, CRC32 검증, UCB_SWAP activation 및 rollback 흐름 구현
 - Flash 메모리 영역 침범으로 발생한 trap 원인 분석 및 수정
@@ -96,13 +96,6 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 - Flash 영역 침범으로 발생한 trap 원인을 메모리 배치 기준으로 추적 및 수정
 - 업데이트 대상 영역 축소 이후 전송 시간과 부팅 결과 비교
 
-### Result
-
-- 다중 ECU 환경에서 사용자 설정값 저장·복원 흐름 구현
-- 담당 ECU의 FOTA reprogramming, CRC 검증, activation, rollback 흐름 구현
-- Flash 메모리 배치 문제로 인한 trap을 분석하고 정상 업데이트 및 부팅 확인
-- 메모리 구조와 linker script 조정을 통해 업데이트 시간을 약 30배 단축
-
 ### Job Relevance
 
 실시간 제어, 비휘발성 저장, Flash update, rollback, 장애 원인 분석을 수행하며 장치 단위 기능 구현을 시스템 안정성 관점으로 확장해 경험했습니다.  
@@ -131,16 +124,15 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 </div>
 
 <p align="center">
-  <em>라즈베리파이4, 센서 모듈, 워터펌프, LED grow light, PiCamera3를 통합한 원격 스마트팜 최종 산출물입니다.</em>
+  <em>라즈베리파이4, 센서 모듈, 워터펌프, LED grow light, PiCamera3를 통합한 원격 스마트팜 최종 산출물</em>
 </p>
 
 <div align="center">
-  <img src="./assets/image/smartfarm_led_on.jpg" width="80%" alt="LED grow light 점등 상태의 스마트팜">
+  <img class="portfolio-img portfolio-img-md" src="./assets/image/smartfarm_led_on.jpg" alt="LED grow light 점등 상태의 스마트팜 최종 산출물">
+  <p class="portfolio-caption">
+    <em>MQTT, GPIO/PWM 기반 LED grow light 제어가 실제 장치 동작으로 이어지는 것을 확인</em>
+  </p>
 </div>
-
-<p align="center">
-  <em>GPIO/PWM 기반 LED grow light 제어가 실제 장치 동작으로 이어지는 것을 확인했습니다.</em>
-</p>
 
 ### System Architecture
 
@@ -149,7 +141,7 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 </div>
 
 <p align="center">
-  <em>구현 범위는 센서 수집, MQTT 원격 제어, 이미지 업로드, 영상 스트리밍을 중심으로 구성했으며, AI Vision Server와 CI/CD는 확장 구조로 설계했습니다.</em>
+  <em>Edge Device, AWS IoT, S3, Kinesis Video Streams, Backend Server, AI Vision Server, Client App을 연동한 원격 스마트팜 시스템 아키텍처</em>
 </p>
 
 ### My Role
@@ -409,7 +401,74 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
 
 <style>
   .anchor, .anchorjs-link, .octicon-link {
-      display: none !important;
+    display: none !important;
+  }
+
+  /* Mermaid: diagram만 중앙 정렬 + 배경 적용 */
+  .mermaid {
+    text-align: center;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 24px auto;
+  }
+
+  .mermaid svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 820px;
+    width: 100%;
+    height: auto;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Portfolio images */
+  .portfolio-img {
+    display: block;
+    margin: 0 auto 8px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .portfolio-img-lg {
+    width: min(900px, 95%);
+  }
+
+  .portfolio-img-md {
+    width: min(560px, 80%);
+  }
+
+  .portfolio-img-sm {
+    width: min(420px, 70%);
+  }
+
+  .portfolio-image-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 16px 0;
+  }
+
+  .portfolio-image-card {
+    width: 48%;
+    min-width: 280px;
+    max-width: 520px;
+  }
+
+  .portfolio-image-card img {
+    width: 100%;
+  }
+
+  .portfolio-caption {
+    text-align: center;
+    font-size: 0.92em;
+    color: #666;
+    margin-top: 6px;
   }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
