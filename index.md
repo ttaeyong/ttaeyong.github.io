@@ -39,14 +39,14 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 
   <div class="portfolio-image-card">
     <div class="portfolio-image-frame">
-      <img class="portfolio-img" src="./assets/image/car_profile_hw_architecture.png" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
+      <img class="portfolio-img" src="./assets/image/car_profile_hw_architecture.webp" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
     </div>
     <p class="portfolio-caption"><em>다중 ECU 기반 차량 설정 개인화 시스템 구성도</em></p>
   </div>
 
   <div class="portfolio-image-card">
     <div class="portfolio-image-frame">
-      <img class="portfolio-img" src="./assets/image/car_profile_state_flow.png" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
+      <img class="portfolio-img" src="./assets/image/car_profile_state_flow.webp" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
     </div>
     <p class="portfolio-caption"><em>ECU 기능 분담, 상태 전이, DFlash 프로필 저장 구조</em></p>
   </div>
@@ -420,7 +420,7 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
   .mermaid svg {
     display: block;
     margin: 0 auto;
-    max-width: 520px;
+    max-width: 480px;
     width: 100%;
     height: auto;
     background: #f8f9fa;
@@ -496,7 +496,7 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
   @media (max-width: 720px) {
     .portfolio-image-card {
       width: 100%;
-      max-width: 560px;
+      max-width: 480px;
     }
 
     .portfolio-img-lg,
