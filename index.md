@@ -149,7 +149,7 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 ### System Architecture
 
 <div align="center">
-  <img class="portfolio-img portfolio-img-lg" src="./assets/image/smartfarm_architecture.png" alt="원격 스마트팜 시스템 아키텍처">
+  <img class="portfolio-img portfolio-img-md" src="./assets/image/smartfarm_architecture.png" alt="원격 스마트팜 시스템 아키텍처">
 </div>
 
 <p class="portfolio-caption"><em>Edge Device, AWS IoT, S3, Kinesis Video Streams, Backend Server, AI Vision Server, Client App을 연동한 원격 스마트팜 시스템 아키텍처</em></p>
@@ -321,7 +321,7 @@ flowchart TD
 ### Performance Comparison
 
 <div align="center">
-  <img class="portfolio-img portfolio-img-lg" src="./assets/image/gemm_speedup.png" alt="행렬곱 최적화 단계별 성능 비교">
+  <img class="portfolio-img portfolio-img-md" src="./assets/image/gemm_speedup.png" alt="행렬곱 최적화 단계별 성능 비교">
 </div>
 
 <p class="portfolio-caption">
