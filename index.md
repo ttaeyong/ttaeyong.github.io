@@ -325,7 +325,7 @@ flowchart TD
 </div>
 
 <p class="portfolio-caption">
-  <em>Naive 구현 대비 성능 향상 배수입니다. 캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 얻었습니다.</em>
+  <em>Naive 구현 대비 성능 향상 배수로, 캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 확인</em>
 </p>
 
 [VTune 병목 분석 보고서 확인 (PDF)](./assets/pdf/Profiling_VTune_Examples.pdf)  
