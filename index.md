@@ -429,7 +429,7 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
   .mermaid svg {
     display: block;
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 480px;
     width: 100%;
     height: auto;
     background: #f8f9fa;
@@ -502,10 +502,10 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
     margin-top: 6px;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 480px) {
     .portfolio-image-card {
       width: 100%;
-      max-width: 560px;
+      max-width: 480px;
     }
 
     .portfolio-img-lg,
