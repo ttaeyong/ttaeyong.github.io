@@ -39,14 +39,14 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 
   <div class="portfolio-image-card">
     <div class="portfolio-image-frame">
-      <img class="portfolio-img" src="./assets/image/car_profile_hw_architecture.webp" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
+      <img class="portfolio-img" src="./assets/image/car_profile_hw_architecture.png" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
     </div>
     <p class="portfolio-caption"><em>다중 ECU 기반 차량 설정 개인화 시스템 구성도</em></p>
   </div>
 
   <div class="portfolio-image-card">
     <div class="portfolio-image-frame">
-      <img class="portfolio-img" src="./assets/image/car_profile_state_flow.webp" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
+      <img class="portfolio-img" src="./assets/image/car_profile_state_flow.png" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
     </div>
     <p class="portfolio-caption"><em>ECU 기능 분담, 상태 전이, DFlash 프로필 저장 구조</em></p>
   </div>
@@ -61,7 +61,7 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 - UDS 기반 업데이트 흐름 통합
 - 담당 ECU reprogramming 기능 구현
 - inactive PFlash write, CRC32 검증, UCB_SWAP activation 및 rollback 흐름 구현
-- Flash 메모리 영역 침범으로 발생한 trap 원인 분석 및 수정
+- map file 및 linker script 기반 Flash 메모리 배치 분석
 - 메모리 구조 분석 및 linker script 조정을 통한 업데이트 시간 단축
 
 ### Project 1. CAN-FD 기반 다중 ECU 차량 설정 개인화 시스템
@@ -80,12 +80,18 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 
 FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구현하고, Flash 메모리 구조와 부팅 흐름을 분석했습니다.
 
-### Key Implementation
+#### Key Implementation
 
 - UDS 기반 업데이트 흐름 통합 참여 및 담당 ECU reprogramming 기능 구현
 - inactive PFlash write, CRC32 검증, UCB_SWAP activation 및 rollback 흐름 구현
-- Flash 메모리 영역 침범으로 발생한 trap 원인을 분석·수정해 정상 업데이트 및 부팅 확인
+- 업데이트 대상 Flash 영역 산정 및 write 범위 조정
 - 메모리 구조 분석 및 linker script 조정을 통해 업데이트 시간을 약 30배 단축
+
+#### Troubleshooting
+
+- 초기 reprogramming 과정에서 업데이트 이미지가 의도하지 않은 Flash 영역까지 포함되며 부팅 중 trap이 발생했습니다.
+- map file과 linker script를 기준으로 PFlash section 배치와 업데이트 대상 범위를 확인했고, 실제 변경이 필요한 영역만 write 대상으로 제한했습니다.
+- 이후 inactive PFlash write, CRC32 검증, UCB_SWAP activation 이후 alternate image 부팅까지 확인하며 정상 업데이트 흐름을 검증했습니다.
 
 ### Verification
 
@@ -93,7 +99,6 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 - 업데이트 이미지 write 이후 CRC32 검증 결과 확인
 - UCB_SWAP activation 이후 alternate image로 정상 부팅되는지 확인
 - rollback 수행 시 이전 영역으로 복구 가능한지 확인
-- Flash 영역 침범으로 발생한 trap 원인을 메모리 배치 기준으로 추적 및 수정
 - 업데이트 대상 영역 축소 이후 전송 시간과 부팅 결과 비교
 
 ### Job Relevance
@@ -133,7 +138,7 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 </div>
 
 <div align="center">
-  <img class="portfolio-img portfolio-img-sm" src="./assets/image/smartfarm_led_on.jpg" alt="LED grow light 점등 상태의 스마트팜 최종 산출물">
+  <img class="portfolio-img portfolio-img-md" src="./assets/image/smartfarm_led_on.jpg" alt="LED grow light 점등 상태의 스마트팜 최종 산출물">
   <p class="portfolio-caption"><em>MQTT, GPIO/PWM 기반 LED grow light 제어 확인</em></p>
 </div>
 
@@ -265,8 +270,8 @@ flowchart TD
     B -- Yes --> C[새 PBA에 기록]
     B -- No --> D[Garbage Collection 수행]
 
-    D --> E[Valid Page 수 기반 Victim Block 선택]
-    E --> F[Valid Page Migration]
+    D --> E[유효 Page 기반 Victim Block 선택]
+    E --> F[유효 Page Migration]
     F --> G[Victim Block Erase]
     G --> H[Mapping / Metadata 갱신]
     H --> C
@@ -420,7 +425,7 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
   .mermaid svg {
     display: block;
     margin: 0 auto;
-    max-width: 480px;
+    max-width: 720px;
     width: 100%;
     height: auto;
     background: #f8f9fa;
@@ -496,7 +501,7 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
   @media (max-width: 720px) {
     .portfolio-image-card {
       width: 100%;
-      max-width: 480px;
+      max-width: 560px;
     }
 
     .portfolio-img-lg,
