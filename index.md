@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "김태용 '|' Embedded & System SW Portfolio"
----------------------------------------------
+title: "김태용 | Embedded & System SW Portfolio"
+---
 
 # 김태용 (Tae Yong Kim)
 
 **Embedded & System Software Engineer**
-[Email](mailto:ktyong1225@inha.edu)  '|'  [GitHub](https://github.com/ttaeyong)
+[Email](mailto:ktyong1225@inha.edu)  |  [GitHub](https://github.com/ttaeyong)
 
 C/C++ 기반의 임베디드·시스템 소프트웨어 프로젝트를 수행하며, 실시간 제어와 시스템 내부 동작에 관심을 가져왔습니다.
 주기 태스크, 인터럽트, 비휘발성 메모리, Flash update, 저장장치 내부 구조, 성능 병목 분석을 경험하며 하드웨어 제약을 고려한 소프트웨어 구조를 구현해왔습니다.
