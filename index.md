@@ -321,7 +321,7 @@ flowchart TD
 ### Performance Comparison
 
 <div align="center">
-  <img class="portfolio-img portfolio-img-md" src="./assets/image/gemm_speedup.png" alt="행렬곱 최적화 단계별 성능 비교">
+  <img class="portfolio-img portfolio-img-lg" src="./assets/image/gemm_speedup.png" alt="행렬곱 최적화 단계별 성능 비교">
 </div>
 
 <p class="portfolio-caption">
