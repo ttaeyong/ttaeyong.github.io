@@ -133,7 +133,7 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 </div>
 
 <div align="center">
-  <img class="portfolio-img portfolio-img-md" src="./assets/image/smartfarm_led_on.jpg" alt="LED grow light 점등 상태의 스마트팜 최종 산출물">
+  <img class="portfolio-img portfolio-img-sm" src="./assets/image/smartfarm_led_on.jpg" alt="LED grow light 점등 상태의 스마트팜 최종 산출물">
   <p class="portfolio-caption"><em>MQTT, GPIO/PWM 기반 LED grow light 제어 확인</em></p>
 </div>
 
@@ -420,7 +420,7 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
   .mermaid svg {
     display: block;
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 520px;
     width: 100%;
     height: auto;
     background: #f8f9fa;
