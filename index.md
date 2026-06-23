@@ -1,7 +1,8 @@
 ---
+
 layout: default
-title: 김태용 | Embedded & System SW Portfolio
--------------------------------------------
+title: "김태용 | Embedded & System SW Portfolio"
+---------------------------------------------
 
 # 김태용 (Tae Yong Kim)
 
