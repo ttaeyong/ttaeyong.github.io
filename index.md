@@ -80,7 +80,7 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 
 FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구현하고, Flash 메모리 구조와 부팅 흐름을 분석했습니다.
 
-#### Key Implementation
+### Key Implementation
 
 - UDS 기반 업데이트 흐름 통합 참여 및 담당 ECU reprogramming 기능 구현
 - inactive PFlash write, CRC32 검증, UCB_SWAP activation 및 rollback 흐름 구현
