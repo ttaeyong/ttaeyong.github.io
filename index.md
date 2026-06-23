@@ -35,20 +35,20 @@ AURIX TC275/TC375 기반 프로젝트를 통해 차량 ECU의 설정값 저장·
 
 ### System Architecture
 
-<div align="center" style="display: flex; gap: 16px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+<div class="portfolio-image-row portfolio-image-row-center">
 
-  <div style="width: 48%; min-width: 280px;">
-    <img src="./assets/image/car_profile_hw_architecture.png" width="100%" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
-    <p align="center">
-      <em>AURIX TC275/TC375, CAN-FD, 센서·액추에이터를 연동한 다중 ECU 기반 차량 설정 개인화 시스템 구성</em>
-    </p>
+  <div class="portfolio-image-card">
+    <div class="portfolio-image-frame">
+      <img class="portfolio-img" src="./assets/image/car_profile_hw_architecture.png" alt="AURIX 기반 다중 ECU 차량 설정 개인화 시스템 하드웨어 구성도">
+    </div>
+    <p class="portfolio-caption"><em>다중 ECU 기반 차량 설정 개인화 시스템 구성도</em></p>
   </div>
 
-  <div style="width: 48%; min-width: 280px;">
-    <img src="./assets/image/car_profile_state_flow.png" width="100%" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
-    <p align="center">
-      <em>ECU별 기능 분담, 최상위 상태 전이, 주기 태스크 기반 제어, DFlash 프로필 저장·복원 흐름을 정리한 구조</em>
-    </p>
+  <div class="portfolio-image-card">
+    <div class="portfolio-image-frame">
+      <img class="portfolio-img" src="./assets/image/car_profile_state_flow.png" alt="차량 설정 개인화 시스템의 ECU 기능 분담 및 상태 흐름">
+    </div>
+    <p class="portfolio-caption"><em>ECU 기능 분담, 상태 전이, DFlash 프로필 저장 구조</em></p>
   </div>
 
 </div>
@@ -118,31 +118,32 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 
 ### Final Output
 
-<div align="center">
-  <img src="./assets/image/smartfarm_far.jpg" width="47%" alt="원격 스마트팜 최종 산출물 전체 사진">
-  <img src="./assets/image/smartfarm_closeup.jpg" width="47%" alt="원격 스마트팜 센서 및 제어부 근접 사진">
-</div>
+<div class="portfolio-image-row">
 
-<p align="center">
-  <em>라즈베리파이4, 센서 모듈, 워터펌프, LED grow light, PiCamera3를 통합한 원격 스마트팜 최종 산출물</em>
-</p>
+  <div class="portfolio-image-card">
+    <img class="portfolio-img" src="./assets/image/smartfarm_far.jpg" alt="원격 스마트팜 최종 산출물 전체 사진">
+    <p class="portfolio-caption"><em>원격 스마트팜 최종 산출물</em></p>
+  </div>
+
+  <div class="portfolio-image-card">
+    <img class="portfolio-img" src="./assets/image/smartfarm_closeup.jpg" alt="원격 스마트팜 센서 및 제어부 근접 사진">
+    <p class="portfolio-caption"><em>센서·액추에이터 통합 구성</em></p>
+  </div>
+
+</div>
 
 <div align="center">
   <img class="portfolio-img portfolio-img-md" src="./assets/image/smartfarm_led_on.jpg" alt="LED grow light 점등 상태의 스마트팜 최종 산출물">
-  <p class="portfolio-caption">
-    <em>MQTT, GPIO/PWM 기반 LED grow light 제어가 실제 장치 동작으로 이어지는 것을 확인</em>
-  </p>
+  <p class="portfolio-caption"><em>MQTT, GPIO/PWM 기반 LED grow light 제어 확인</em></p>
 </div>
 
 ### System Architecture
 
 <div align="center">
-  <img src="./assets/image/smartfarm_architecture.png" width="95%" alt="원격 스마트팜 시스템 아키텍처">
+  <img class="portfolio-img portfolio-img-lg" src="./assets/image/smartfarm_architecture.png" alt="원격 스마트팜 시스템 아키텍처">
 </div>
 
-<p align="center">
-  <em>Edge Device, AWS IoT, S3, Kinesis Video Streams, Backend Server, AI Vision Server, Client App을 연동한 원격 스마트팜 시스템 아키텍처</em>
-</p>
+<p class="portfolio-caption"><em>Edge Device, AWS IoT, S3, Kinesis Video Streams, Backend Server, AI Vision Server, Client App을 연동한 원격 스마트팜 시스템 아키텍처</em></p>
 
 ### My Role
 
@@ -311,10 +312,10 @@ flowchart TD
 ### Performance Comparison
 
 <div align="center">
-  <img src="./assets/image/gemm_speedup.png" width="75%" alt="행렬곱 최적화 단계별 성능 비교">
+  <img class="portfolio-img portfolio-img-lg" src="./assets/image/gemm_speedup.png" alt="행렬곱 최적화 단계별 성능 비교">
 </div>
 
-<p align="center">
+<p class="portfolio-caption">
   <em>Naive 구현 대비 성능 향상 배수입니다. 캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 얻었습니다.</em>
 </p>
 
@@ -404,18 +405,22 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
     display: none !important;
   }
 
-  /* Mermaid: diagram만 중앙 정렬 + 배경 적용 */
+  /* Mermaid: rendered diagram만 중앙 정렬 + 배경 적용 */
   .mermaid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background: transparent !important;
     padding: 0 !important;
     margin: 24px auto;
+    overflow-x: auto;
   }
 
   .mermaid svg {
     display: block;
     margin: 0 auto;
-    max-width: 820px;
+    max-width: 720px;
     width: 100%;
     height: auto;
     background: #f8f9fa;
@@ -454,10 +459,27 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
     margin: 16px 0;
   }
 
+  /* 차량 System Architecture처럼 높이가 다른 2개 이미지만 상하 중앙 정렬 */
+  .portfolio-image-row-center {
+    align-items: stretch;
+  }
+
   .portfolio-image-card {
     width: 48%;
     min-width: 280px;
     max-width: 520px;
+  }
+
+  .portfolio-image-row-center .portfolio-image-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-image-frame {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .portfolio-image-card img {
@@ -470,11 +492,51 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
     color: #666;
     margin-top: 6px;
   }
+
+  @media (max-width: 720px) {
+    .portfolio-image-card {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .portfolio-img-lg,
+    .portfolio-img-md,
+    .portfolio-img-sm {
+      width: 95%;
+    }
+
+    .mermaid svg {
+      max-width: 95%;
+    }
+  }
 </style>
+
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>
-window.onload = function() {
-  mermaid.initialize({ startOnLoad: true });
-  mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-};
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('pre > code.language-mermaid, pre > code[class*="language-mermaid"]').forEach(function (codeBlock) {
+    const pre = codeBlock.parentElement;
+    const mermaidDiv = document.createElement("div");
+    mermaidDiv.className = "mermaid";
+    mermaidDiv.textContent = codeBlock.textContent;
+    pre.replaceWith(mermaidDiv);
+  });
+
+  if (window.mermaid) {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: "default",
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true
+      }
+    });
+
+    if (typeof mermaid.run === "function") {
+      mermaid.run({ querySelector: ".mermaid" });
+    } else {
+      mermaid.init(undefined, document.querySelectorAll(".mermaid"));
+    }
+  }
+});
 </script>
