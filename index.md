@@ -328,9 +328,6 @@ flowchart TD
   <em>Naive 구현 대비 성능 향상 배수로, 캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 확인</em>
 </p>
 
-[VTune 병목 분석 보고서 확인 (PDF)](./assets/pdf/Profiling_VTune_Examples.pdf)  
-[SIMD 및 복합 최적화 보고서 확인 (PDF)](./assets/pdf/Profiling_Matrix_Multiplication.pdf)
-
 ### Job Relevance
 
 메모리 접근 패턴, 캐시 구조, 레지스터 제약을 바탕으로 병목을 분석하고 개선한 경험은 제품 성능 분석과 시스템 수준 문제 원인 파악에 활용 가능한 기반이라고 생각합니다.
