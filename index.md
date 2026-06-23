@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 김태용 | Embedded & System SW Portfolio
 -------------------------------------------
