@@ -89,9 +89,13 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 
 #### Troubleshooting
 
-- 초기 reprogramming 과정에서 업데이트 이미지가 의도하지 않은 Flash 영역까지 포함되며 부팅 중 trap이 발생했습니다.
-- map file과 linker script를 기준으로 PFlash section 배치와 업데이트 대상 범위를 확인했고, 실제 변경이 필요한 영역만 write 대상으로 제한했습니다.
-- 이후 inactive PFlash write, CRC32 검증, UCB_SWAP activation 이후 alternate image 부팅까지 확인하며 정상 업데이트 흐름을 검증했습니다.
+- 초기 reprogramming 과정에서 Flash 메모리 영역 침범으로 부팅 중 trap이 발생했습니다.
+- 업데이트 이미지의 write 범위와 Flash 배치를 확인하고, 침범 가능성이 있는 영역을 분리해 정상 업데이트 및 부팅 흐름을 검증했습니다.
+
+#### Improvement
+
+- map file과 linker script를 기준으로 실제 변경이 필요한 Flash section을 확인했습니다.
+- 불필요한 영역까지 전송·write하지 않도록 업데이트 대상 범위를 조정해 업데이트 시간을 약 30배 단축했습니다.
 
 ### Verification
 
