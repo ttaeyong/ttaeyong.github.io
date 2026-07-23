@@ -105,11 +105,6 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 - rollback 수행 시 이전 영역으로 복구 가능한지 확인
 - 업데이트 대상 영역 축소 이후 전송 시간과 부팅 결과 비교
 
-### Job Relevance
-
-실시간 제어, 비휘발성 저장, Flash update, rollback, 장애 원인 분석을 수행하며 장치 단위 기능 구현을 시스템 안정성 관점으로 확장해 경험했습니다.  
-이는 장비 제어 SW, 자동화 시스템 운영, 업데이트 안정성, 현장 시스템 문제 분석이 중요한 직무에 활용 가능한 기반이라고 생각합니다.
-
 ### Skills / Keywords
 
 `C` `AURIX TC275` `AURIX TC375` `CAN-FD` `DFlash` `PFlash` `CRC32` `UCB_SWAP` `Rollback` `FOTA` `Linker Script` `Trap Analysis`
@@ -198,11 +193,6 @@ FOTA 프로젝트에서는 담당 ECU의 reprogramming과 rollback 흐름을 구
 - 캡스톤디자인 최종 발표 및 전시를 통해 장려상 수상
 - 물리 장치와 서버/클라우드가 연동되는 시스템 구조를 직접 구현
 
-### Job Relevance
-
-센서 데이터 수집, 장치 상태 관리, 원격 명령 처리, 서버 연동을 구현하며 물리 시스템과 IT 시스템이 연결되는 구조를 경험했습니다.  
-이는 현장 장비의 상태를 수집하고, 원격에서 제어하며, 데이터 기반으로 운영하는 시스템을 이해하는 데 의미 있는 기반이 된다고 생각합니다.
-
 ### Skills / Keywords
 
 `Python` `Raspberry Pi 4` `GPIO` `PWM` `I2C` `MQTT` `AWS IoT` `Kinesis Video Streams` `PiCamera3` `Presigned URL` `Sensor Integration`
@@ -256,11 +246,6 @@ LBA-PBA mapping, metadata 관리, valid/invalid page 처리, victim block 선정
 - NAND read/write, LBA-PBA mapping, block erase, metadata 관리, Garbage Collection을 포함한 SSD 내부 동작 구조 구현
 - over-provisioning과 invalid page 증가가 GC 비용 및 유효 페이지 이동량에 미치는 영향 확인
 - 저장장치의 성능이 외부 API뿐 아니라 내부 상태 관리와 정책에 의해 달라진다는 점을 이해
-
-### Job Relevance
-
-SSD 내부의 주소 변환, metadata 관리, Garbage Collection을 직접 구현하며 메모리 제품의 내부 동작을 시스템 소프트웨어 관점에서 이해했습니다.  
-이는 메모리 제품 검증, 성능 분석, 내부 상태 기반 문제 원인 분석에 필요한 기반 경험이라고 생각합니다.
 
 ### Skills / Keywords
 
@@ -328,10 +313,6 @@ flowchart TD
   <em>Naive 구현 대비 성능 향상 배수로, 캐시 구조와 레지스터 제약을 함께 고려한 복합 최적화에서 가장 큰 성능 향상을 확인</em>
 </p>
 
-### Job Relevance
-
-메모리 접근 패턴, 캐시 구조, 레지스터 제약을 바탕으로 병목을 분석하고 개선한 경험은 제품 성능 분석과 시스템 수준 문제 원인 파악에 활용 가능한 기반이라고 생각합니다.
-
 ### Skills / Keywords
 
 `C++` `Intel VTune Profiler` `AVX-512` `Loop Reordering` `Blocking` `Loop Unrolling` `Cache Locality` `Memory Bound` `Register Spilling`
@@ -382,11 +363,6 @@ ATmega128과 uC/OS-II 기반으로 온도 센서와 조도 센서를 주기적�
 - RTOS 환경에서 센서 입력, 상태 판단, 디스플레이, 경고 출력을 태스크 단위로 분리해 구현
 - IPC 선택에 따라 데이터 전달 방식이 달라진다는 점을 실제 시스템 구조로 연결
 - 입력 조건 변화에 따라 임계값과 출력 동작이 달라지는 제어 흐름 설계
-
-### Job Relevance
-
-태스크 분리, IPC 설계, 상태 기반 출력 제어를 구현하며 실시간 임베디드 SW의 실행 구조를 경험했습니다.  
-제어 흐름과 데이터 전달 구조가 중요한 기반 SW나 임베디드 응용 SW를 이해하는 데 확장 가능한 기반이 되었습니다.
 
 ### Skills / Keywords
 
